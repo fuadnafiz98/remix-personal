@@ -1,9 +1,9 @@
 export default function Index() {
   return (
     <div className="mt-12 mx-12 md:mx-48 lg:mx-64 md:mt-16 text-white">
-      <div className="hidden my-12 md:flex md:justify-between">
+      <div className="hidden my-12 md:flex md:justify-start">
         <ul className="flex justify-start space-x-8 flex-1">
-          <li className="text-lg font-medium py-3 px-6 hover:bg-gray-800 rounded-lg">
+          <li className="text-lg font-medium py-3 pl-2 pr-6 hover:bg-gray-800 rounded-lg">
             Home
           </li>
           <li className="text-lg font-medium py-3 px-6 hover:bg-gray-800 rounded-lg">
@@ -13,10 +13,9 @@ export default function Index() {
             Resume
           </li>
           <li className="text-lg font-medium py-3 px-6 hover:bg-gray-800 rounded-lg">
-            Info
+            Timeline
           </li>
         </ul>
-        <button className="p-2 rounded-lg text-center bg-gray-800">BTN</button>
       </div>
       <div className="flex flex-col md:flex-row md:justify-start md:mt-16">
         <img
@@ -40,18 +39,18 @@ export default function Index() {
           Projects
         </h2>
         <div className="mt-6">
-          <div className="flex flex-col">
-            <div className="h-40 w-full bg-gray-600 rounded-lg"></div>
-            <div className="flex flex-col mt-6">
+          <div className="flex flex-col md:flex-row space-x-4">
+            <div className="h-40 w-full md:w-40 bg-gray-600 rounded-lg"></div>
+            <div className="flex flex-col mt-6 md:mt-0 md:flex-1">
               <h3>Title of the Project</h3>
               <h4>Description...</h4>
             </div>
           </div>
         </div>
         <div className="mt-6">
-          <div className="flex flex-col">
-            <div className="h-40 w-full bg-gray-600 rounded-lg"></div>
-            <div className="flex flex-col mt-6">
+          <div className="flex flex-col md:flex-row space-x-4">
+            <div className="h-40 w-full md:w-40 bg-gray-600 rounded-lg"></div>
+            <div className="flex flex-col mt-6 md:mt-0 md:flex-1">
               <h3>Title of the Project</h3>
               <h4>Description...</h4>
             </div>
@@ -60,6 +59,11 @@ export default function Index() {
         <div>
           <h3>Load More...</h3>
         </div>
+      </div>
+      <div className="mt-12">
+        <h2 className="text-xl font-bold border-b-2 py-1 border-gray-700">
+          Resume
+        </h2>
       </div>
     </div>
   );
