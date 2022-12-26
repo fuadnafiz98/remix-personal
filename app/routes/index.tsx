@@ -19,7 +19,12 @@ export default function Index() {
         <button className="p-2 rounded-lg text-center bg-gray-800">BTN</button>
       </div>
       <div className="flex flex-col md:flex-row md:justify-start md:mt-16">
-        <div className="h-24 w-24 rounded-full bg-green-300"></div>
+        <img
+          className="object-cover h-24 w-24 rounded-full"
+          src="dp.jpg"
+          alt="Md. Muhtasim Fuad(fuadnafiz98)"
+          loading="lazy"
+        />
         <div className="ml-1 mt-4 md:mt-0 md:ml-8">
           <h1 className="text-3xl font-bold">Muhtasim Fuad</h1>
           <h2 className="text-lg font-medium text-gray-100">
